@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -6,7 +5,7 @@ export default function Home() {
   const router = useRouter();
 
   const handleNavigate = () => {
-    router.push("./admin");
+    router.push("/admin");
   };
   return (
     <>
@@ -15,9 +14,12 @@ export default function Home() {
         <li>
           <Link href="./about">About</Link>
         </li>
-        <h2>Neseted Routing in this Route</h2>
+        <h2>Nested Routing in this Route</h2>
         <li>
           <Link href="./product">Product</Link>
+        </li>
+        <li>
+          <Link href="./events">Event</Link>
         </li>
         <h3>Navigate in next</h3>
         <li onClick={handleNavigate}>Got Admin Page</li>
