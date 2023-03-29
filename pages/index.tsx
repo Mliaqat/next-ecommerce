@@ -23,6 +23,8 @@ export default function Home() {
         </li>
         <h3>Navigate in next</h3>
         <li onClick={handleNavigate}>Got Admin Page</li>
+        <h3>Static Generation</h3>
+        <li ><Link href={"./staticGeneration"}>staticGeneration</Link></li>
       </ul>
     </>
   );
